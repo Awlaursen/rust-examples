@@ -1,3 +1,7 @@
+---
+defaultTemplate: "[[tpl_satlab]]"
+---
+
 # rust-examples
 Rust Examples for Introduction Course
 

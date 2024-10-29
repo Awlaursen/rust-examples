@@ -1,6 +1,6 @@
 
 // Function with no return value
-fn print_result<T: std::fmt::Display>(result: T) {
+fn print_result(result: i32) /* -> () */ {
     println!("result is: {}", result);
 }
 
