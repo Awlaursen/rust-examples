@@ -1,12 +1,12 @@
 ---
 defaultTemplate: "[[tpl_satlab]]"
 ---
-<style> :root {--r-code-font: "FiraCode Nerd Font";} .reveal .hljs {min-height: 50%;} </style>
+
 # Rust Introduction
 
 By Albert Laursen
 
-note:
+note: 
 1. Who am I?
 2. Who is AAU Satlab?
 3. What is the purpose of this presentation?
@@ -24,13 +24,14 @@ note:
 - Tooling
 - Compiling
 
-note:
+note: 
 General structure of the presentation:
 1. Introduction to Rust
 2. Installation
 3. Code examples
 
 ---
+
 ## What is Rust?
 - Systems Programming Language
 - Compiled
@@ -40,10 +41,10 @@ General structure of the presentation:
   - Scope & Lifetimes
 
 note:
-1. Ask if people know what a systems programming language is
-2. Talk about the difference between compiled and interpreted languages
-3. What makes a language modern?
-4. What is a garbage collector?
+  1. Ask if people know what a systems programming language is
+  2. Talk about the difference between compiled and interpreted languages
+  3. What makes a language modern?
+  4. What is a garbage collector?
 
 ---
 
@@ -66,9 +67,8 @@ note:
    1. Often times you have to use the manufacturer's libraries in C
 
 ---
+
 ## C++/C vs Rust
-
-
 
 - C++/C is not safe
   - C++ is a superset of C
@@ -101,6 +101,7 @@ note:
    3. Types and associated functions
 
 ---
+
 ## Further Reading
 - Rust Book
   - Online Version: [doc.rust-lang.org/book](https://doc.rust-lang.org/book/)
@@ -111,6 +112,7 @@ note:
   - Cheat Sheet: [cheats.rs](https://cheats.rs/)
 
 ---
+
 # Install Party
 :partying_face:
 
@@ -132,6 +134,7 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ---
+
 ## Tooling
 - `rustc` - Rust Compiler
 - `cargo` - Package Manager
@@ -140,6 +143,7 @@ $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 - `clippy` - Linter
 
 ---
+
 ## Compiling
 
 ```bash
@@ -151,6 +155,3 @@ cargo run
 ```text
 Hello, world!
 ```
-
----
-
