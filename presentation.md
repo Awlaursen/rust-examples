@@ -155,3 +155,161 @@ cargo run
 ```text
 Hello, world!
 ```
+
+---
+
+# Code Examples
+
+Get git repository:
+```bash
+git clone https://github.com/Awlaursen/rust-examples.git
+```
+
+---
+
+## Basic Syntax
+
+File: `01-hello\src\main.rs`
+
+```rust []½
+// Primitive data types in Rust
+let x: i32 = 5; // signed 32-bit integer
+let y: f64 = 2.5; // 64-bit floating point
+let z: u32 = 1_000_000; // unsigned 32-bit integer
+let a: char = 'a'; // single Unicode character
+let b: bool = true; // boolean
+let c: &str = "Hello, world!"; // string slice
+```
+
+---
+## Basic Syntax
+
+File: `01-hello\src\main.rs`
+
+```rust []
+// inferred data types in Rust
+let x = 5; // i32
+let y = 2.5; // f64
+```    
+
+```rust [] 
+// Explicitly specifying data types in Rust
+let x = 5i32;
+let y = 2.5f64;
+let z = 1_000_000u32;
+```
+
+---
+
+## Basic Syntax
+
+File: `01-hello\src\main.rs`
+
+```rust []
+// Compound data types in Rust
+let d = [1, 2, 3, 4, 5]; // [i32; 5]
+let e = (1, 2, 3, 4, 5); // (i32, i32, i32, i32, i32)
+```
+
+```rust []
+// Accessing elements in compound data types
+let first = d[0];
+let second = e.1;
+print!("first = {}, second = {}", first, second);
+```
+
+---
+
+## Basic Syntax
+
+File: `01-hello\src\main.rs`
+  
+  ```rust []
+  // Control flow in Rust
+  if x < 5 {
+      println!("x is less than 5");
+  } else if x == 5 {
+      println!("x is equal to 5");
+  } else {
+      println!("x is greater than 5");
+  }
+  ```
+
+---
+
+## Basic Syntax
+
+File: `01-hello\src\main.rs`
+
+<split even gap=1>
+
+  ```rust []
+  // Loops in Rust
+  for i in 0..5 {
+      println!("i = {}", i);
+  }
+
+  let mut i = 0;
+  while i < 5 {
+      println!("i = {}", i);
+      i += 1;
+  }
+  ```
+
+  ```rust []
+  // Loop forever until break
+  let mut i = 0;
+  loop {
+      println!("i = {}", i);
+      i += 1;
+      if i == 5 {
+          break;
+      }
+  }
+  ```
+
+</split>
+
+---
+
+## Basic Syntax
+
+File: `01-hello\src\main.rs`
+
+  ```rust []
+  // Mutability in Rust
+  let mut x = 5;
+  x = 10;
+  ```
+    
+  ```rust []
+  // Shadowing in Rust
+  let x = 5;
+  let x = x + 1;
+  let x = x * 2;
+  ```
+
+---
+
+## Basic Syntax
+
+File: `01-hello\src\main.rs`
+
+  ```rust []
+  // Macros in Rust
+  let my_vector = vec![1, 2, 3, 4, 5]; // Vec<i32>
+  println!("x = {}, y = {}, z = {}", x, y, z);
+
+  println!("{:?}", my_vector);
+  ```
+
+  ```rust []
+  let my_vector = <[_]>::into_vec(
+      #[rustc_box]
+      alloc::boxed::Box::new([1, 2, 3, 4, 5]),
+  ); // Vec<i32>
+
+  std::io::_print(
+    builtin #format_args("x = {}, y = {}, z = {}\n",x,y,z));
+
+  ```
