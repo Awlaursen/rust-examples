@@ -1,3 +1,13 @@
+fn calculate_length(s: &String) -> usize {
+    // reference is {read-only / immutable / borrowed}
+    s.len() // returns the length of the string without needing ownership
+}
+
+fn change(some_string: &String) {
+    // mutability is not allowed for borrowed references
+    some_string.push_str(", world"); // This will not compile
+}
+
 fn main() {
     {
         // This block will compile
@@ -58,14 +68,4 @@ fn main() {
         // println!("{r1} and {r2}");
     
     }
-}
-
-fn calculate_length(s: &String) -> usize {
-    // reference is {read-only / immutable / borrowed}
-    s.len() // returns the length of the string without needing ownership
-}
-
-fn change(some_string: &String) {
-    // mutability is not allowed for borrowed references
-    some_string.push_str(", world"); // This will not compile
 }

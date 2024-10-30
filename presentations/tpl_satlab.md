@@ -1,6 +1,6 @@
 <!-- .slide: data-auto-animate -->
-<grid drag="15 15" drop="topleft" >
-![[satlab.png]]
+<grid drag="25 15" drop="topleft" >
+![[logo_white.png]]
 </grid>
 
 <grid drag="100 6" drop="bottom" font-size="0.8em">
