@@ -7,7 +7,7 @@ fn main() {
         // do stuff with s
         println!("{}", s);
     }                           // this scope is now over, and s is no longer valid
-    println!("{}", s); // This will not compile
+    // println!("{}", s); // This will not compile
     
     // Move of ownership from s1 to s2
     let s1 = String::from("hello");

@@ -1,6 +1,5 @@
 
 // Structs are used to create custom data types
-#[derive(Debug)]
 struct Person {
     first_name: String,
     last_name: String,
@@ -28,7 +27,6 @@ impl Person {
 fn main() {
     // Create a new Person
     let person = Person::new("John", "Doe", 30);
-    println!("person = {:?}", person);
 
     // Access fields of the Person
     println!("first_name = {}", person.first_name);
