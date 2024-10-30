@@ -19,10 +19,10 @@ note:
 - What is Rust
 - Why Choose Rust
 - C++/C vs Rust
-
 - Installation
 - Tooling
 - Compiling
+- Getting Started
 
 note: 
 General structure of the presentation:
@@ -34,10 +34,10 @@ General structure of the presentation:
 
 ## What is Rust?
 - Systems Programming Language
-- Compiled
-- Modern Language 
++ Compiled
++ Modern Language 
 	- Type system, concurrency, memory safety
-- No Runtime Garbage Collector
++ No Runtime Garbage Collector
   - Scope & Lifetimes
 
 note:
@@ -52,10 +52,10 @@ note:
 - Safety
   - No null pointers
   - Borrowing & Lifetimes
-- Modern Tooling
++ Modern Tooling
   - Cargo & Crates
-- Only modern choice for embedded systems
-- Sizeable embedded community
++ Only modern choice for embedded systems
++ Sizeable embedded community
 
 note:
 1. Why is safety important?
@@ -72,12 +72,12 @@ note:
 
 - C++/C is not safe
   - C++ is a superset of C
-- Borrow Checker
++ Borrow Checker
   - Compile time safety
-- Interfaces
++ Interfaces
   - Abstract classes vs Traits
   - e.g. `embedded-hal`
-- OOP
++ OOP
   - C++:  `class`'es
   - Rust:  `struct`s, `enum`s & `impl`s
 
@@ -594,11 +594,12 @@ note:
 
 File: `03-ownership\src\bin\02-borrowing.rs`
 
-Reference types:
-- `&T` - immutable reference
-- `&mut T` - mutable reference
-- `&str` - string slice
-- `&[T]` - slice
+| Syntax | Description |
+|--------|-------------|
+| `&T` | immutable reference |
+| `&mut T` | mutable reference |
+| `&str` | string slice |
+| `&[T]` | slice |
 
 note:
 1. Rules:
