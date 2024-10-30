@@ -817,25 +817,27 @@ note:
 
 File: `04-structs\src\main.rs`
 
+::: block <!-- element style="font-size: 0.85em; width: 27em" -->
+
 ```rust []
 // Structs can have associated functions & methods
 impl Person {
-    // associated function
-    fn new(first_name: &str, last_name: &str, age: u8) -> Person {
-        Person {
-            first_name: first_name.to_string(),
-            last_name: last_name.to_string(),
-            age,
-        }
-    }
+   // associated function
+   fn new(first_name: &str, last_name: &str, age: u8) -> Self {
+      Person {
+         first_name: first_name.to_string(),
+         last_name: last_name.to_string(),
+         age,
+      }
+   }
 
-    // method
-    fn full_name(&self) -> String {
-        format!("{} {}", self.first_name, self.last_name)
-    }
+   // method
+   fn full_name(&self) -> String {
+      format!("{} {}", self.first_name, self.last_name)
+   }
 }
 ```
-
+:::
 note:
 This is where most of the object-oriented programming happens in Rust
 1. `new` is the conventional name for a constructor
