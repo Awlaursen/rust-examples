@@ -860,3 +860,15 @@ println!("full_name = {}", person.full_name());
 note:
 1. Associated functions are called with `::`
 2. Methods are called with `.`
+
+---
+
+# That's All 
+for today...
+
+note:
+Next time we'll take a look at
+- Enums (+Error Handling)
+- Modules
+- Traits
+- Lifetimes
