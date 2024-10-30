@@ -186,11 +186,7 @@ git clone https://github.com/Awlaursen/rust-examples.git
 
 File: `01-hello\src\main.rs`
 
-<<<<<<< HEAD
 ```rust []
-=======
-```rust []½
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 // Primitive data types in Rust
 let x: i32 = 5; // signed 32-bit integer
 let y: f64 = 2.5; // 64-bit floating point
@@ -200,7 +196,6 @@ let b: bool = true; // boolean
 let c: &str = "Hello, world!"; // string slice
 ```
 
-<<<<<<< HEAD
 note:
 1. Types are on the right side, compared to C
 2. `i32` is the default integer type
@@ -208,8 +203,6 @@ note:
 4. `&str` is a string slice, we will come back to this later
 
 
-=======
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ---
 ## Basic Syntax
 
@@ -219,10 +212,7 @@ File: `01-hello\src\main.rs`
 // inferred data types in Rust
 let x = 5; // i32
 let y = 2.5; // f64
-<<<<<<< HEAD
 let z = 1_000_000; // i32
-=======
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ```    
 
 ```rust [] 
@@ -232,14 +222,11 @@ let y = 2.5f64;
 let z = 1_000_000u32;
 ```
 
-<<<<<<< HEAD
 note:
 1. When iferred, z will be an `i32` because it is the default
    1. Unless z is passed to a function that requires a `u32`
 2. Explicitly specifying is not necessary but can be useful in some cases
    1. It's similar to C but with more specific types
-=======
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ---
 
 ## Basic Syntax
@@ -249,11 +236,7 @@ File: `01-hello\src\main.rs`
 ```rust []
 // Compound data types in Rust
 let d = [1, 2, 3, 4, 5]; // [i32; 5]
-<<<<<<< HEAD
 let e = (1, 2, 3, 4.5, 5.5); // (i32, i32, i32, f64, f64)
-=======
-let e = (1, 2, 3, 4, 5); // (i32, i32, i32, i32, i32)
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ```
 
 ```rust []
@@ -263,14 +246,11 @@ let second = e.1;
 print!("first = {}, second = {}", first, second);
 ```
 
-<<<<<<< HEAD
 note:
 1. Arrays and tuples similar but different
    1. Tuples can have different types
 2. Tuples are often used for anonymous structs
 
-=======
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ---
 
 ## Basic Syntax
@@ -288,15 +268,12 @@ if x < 5 {
 }
 ```
 
-<<<<<<< HEAD
 note:
 1. Rust has very cool control flow that we will see more of later
    1. `match` 
    2. `if let` 
    3. `while let` 
 
-=======
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ---
 
 ## Basic Syntax
@@ -332,13 +309,10 @@ loop {
 
 </split>
 
-<<<<<<< HEAD
 note:
 1. `loop` is the same as `while true`
    1. Very useful for embedded systems
 
-=======
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ---
 
 ## Basic Syntax
@@ -358,13 +332,10 @@ let x = x + 1;
 let x = x * 2;
 ```
 
-<<<<<<< HEAD
 note:
 1. Mutability is not the same as reassignment
 2. Shadowing is useful for changing types
    1. `let x = 5;` `let x = "hello";`
-=======
->>>>>>> 6a0c796ab743cb16a6b31fb2c9221630bf78105b
 ---
 
 ## Basic Syntax
