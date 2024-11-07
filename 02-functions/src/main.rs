@@ -5,7 +5,7 @@ fn print_result(result: i32) /* -> () */ {
 }
 
 // Function with return value
-fn add_numbers(x: i32, y: i32) -> i32 {
+fn add_numbers(x: i64, y: i32) -> i32 {
     x + y
 }
 
