@@ -12,6 +12,9 @@ CC-BY-SA 4.0.
 - Lifetimes
 - Modules
 
+`git clone https://github.com/Awlaursen/rust-examples`
+
+`git pull`
 
 # Compound Types
 
